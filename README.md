@@ -6,7 +6,7 @@ This repository serves as the **Master Test Strategy** and orchestration center 
 The objective is to achieve **90%+ automated regression coverage** for the Claims lifecycle. By implementing a "Shift-Left" approach, we validate business logic at the API and Database levels before the UI is even rendered, significantly reducing the cost of defects found in UAT.
 
 ## Integrated Quality Architecture (Specialized Pillars)
-This hub orchestrates four high-performance repositories aimed at validating the complete claims lifecycle.
+This hub manages four high-performance repositories that validate the full claims lifecycle.
 
 ```mermaid
 graph TD
@@ -51,5 +51,5 @@ claims-qa-suite/
 ```
 
 ---
-**Srinivasa Rao Thata** | Lead QA Automation Engineer
+**Srinivasa Rao Thata** | Senior QA Automation Engineer
 `Quality Engineering | Strategy & Orchestration`
