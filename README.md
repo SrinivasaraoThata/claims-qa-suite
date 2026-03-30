@@ -1,44 +1,38 @@
-# Healthcare Claims Automation Suite
+# Healthcare Claims: Quality Engineering Strategy Hub
 
-## Project Overview
-This repository serves as the foundational documentation hub and strategic center for the validation of the Healthcare Claims Management system. The suite is designed to ensure rigorous quality assurance across all layers of the application, driving reliability and efficiency in claims processing.
+This repository serves as the **Master Test Strategy** and orchestration center for the Healthcare Claims Management system. Instead of a single monolithic repo, our quality strategy is divided into specialized, high-performance suites for UI, API, Data, and Performance.
 
-## The Application Context
-For the purposes of this automation suite, **ParaBank** is utilized as the application proxy. In this context, financial "Transactions" are mapped directly to healthcare "Claims" to simulate and validate core business workflows effectively.
+## 🎯 The Mission
+The objective is to achieve **90%+ automated regression coverage** for the Claims lifecycle. By implementing a "Shift-Left" approach, we validate business logic at the API and Database levels before the UI is even rendered, significantly reducing the cost of defects found in UAT.
 
-## Technology Stack
-The automation ecosystem is built upon a robust, modern technology stack:
-- **Python**: Core programming language for script development.
-- **Selenium**: Framework for UI-level automated testing.
-- **Pytest**: Primary testing framework for test execution and assertion management.
-- **Requests**: Library utilized for API testing and integration validation.
-- **SQL**: Database querying for data validation and integrity checks.
-- **JMeter**: Tooling for performance, load, and stress testing.
+## 🏗️ Integrated Quality Architecture (Specialized Pillars)
+This hub orchestrates four high-performance automation repositories. For detailed strategy on each, refer to:
 
-## Systems Architecture
-The following diagram illustrates how the technical repositories integrate with this central strategy hub:
+*   🏗️ **Service Pillar: [UI Automation (Selenium/Python)](https://github.com/SrinivasaraoThata/claims-ui-automation)**: End-to-end validation of Member Portal workflows and UX integrity.
+*   **API Testing (Requests)**: (Upcoming) Targeted validation of RESTful Claim submission services.
+*   **Data Validation (SQL)**: (Upcoming) Ensuring ETL integrity and backend state persistence.
+*   **Performance (JMeter)**: (Upcoming) Load testing critical endpoints for scalability.
 
+## 🛠️ Technology Rationale
+*   **Python Stack**: Chosen for its library support (Requests, Pytest) and ease of integration into modern CI/CD pipelines.
+*   **ParaBank Proxy**: Used to simulate the "Claims" lifecycle. Financial transactions are mapped to Claim States (Pending -> Processed -> Approved).
+*   **Centralized Traceability**: All tests are mapped to the **[Master RTM](docs/master-rtm.md)** found in this hub.
+
+## 📈 Strategic Goals
+*   **Reduce Manual Overhead**: Automating 15+ high-frequency manual claim checks.
+*   **Feedback Loop**: Reducing the regression cycle from 3 days to 45 minutes via parallel execution.
+*   **Security & Compliance**: Validating PII/PHII masking and RBAC early in the cycle (See **[Compliance Strategy](docs/compliance-security.md)**).
+
+## 📂 Hub Structure
 ```text
-+-------------------------------------------------+
-|          Claims QA Strategy Hub                 |
-|          (claims-qa-suite)                      |
-|                                                 |
-|  - Strategy & Standards                         |
-|  - Requirements Traceability                    |
-|  - Business Context                             |
-+------------------------+------------------------+
-                         |
-                         v
-      +------------------+------------------+
-      |                                     |
-+-----v-----+ +-----v-----+ +-----v-----+ +-----v-----+
-| UI Test   | | API Test  | | Data Test | | Perf Test |
-| Repo      | | Repo      | | Repo      | | Repo      |
-|           | |           | |           | |           |
-| (Selenium)| | (Requests)| | (SQL)     | | (JMeter)  |
-+-----------+ +-----------+ +-----------+ +-----------+
+claims-qa-suite/
+├── docs/                 # Strategy, Master RTM, and Compliance documentation
+│   ├── master-rtm.md     # Requirements Traceability
+│   └── compliance-security.md # HIPAA/PHI Security Strategy
+├── test-strategy/        # STLC phase definitions and Tooling rationale
+└── README.md             # Strategy Overview
 ```
 
 ---
-**Author:** Srinivasa Rao Thata  
-**Year:** 2026
+**Srinivasa Rao Thata** | Lead QA Automation Engineer
+`Quality Engineering | Strategy & Orchestration`

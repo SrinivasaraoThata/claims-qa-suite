@@ -1,24 +1,29 @@
 # Technical Architecture & Infrastructure
 
-This document outlines the foundational architecture of the QA automation suite, focusing on cross-layer capabilities and shared infrastructure.
+This document outlines the orchestration of our specialized quality suites. Our architecture is designed for **High Cohesion and Low Coupling**, ensuring that UI, API, and Data validation can scale independently while sharing a common strategic core.
 
-## Environment Configuration Management
-To maintain consistency and reliability across the UI, API, Data, and Performance testing layers, environment configurations are centralized. 
-- **Configuration Hub**: Environment variables (e.g., base URLs, database connection strings, credentials) are managed via externalized, secure configuration files (e.g., `pytest.ini`, `.env` files).
-- **Dynamic Provisioning**: CI/CD pipelines inject target environment variables at runtime, ensuring tests can execute seamlessly across Dev, QA, Staging, and Production-equivalent environments without code modification.
+## Specialized Automation Pillars
+Our strategy is executed through four dedicated pillars, each optimized for its specific layer:
 
-## Common Utilities
-A shared library of utilities is employed to reduce code duplication and enforce standardization:
-- **API Clients**: Standardized HTTP request handlers with built-in retry mechanisms and logging.
-- **Data Generators**: Utilities to dynamically synthesize required test data (e.g., generating mocked "Claims" or "Transactions" using Faker libraries).
-- **Database Connectors**: Secure, abstracted classes for establishing connections and executing CRUD operations to validate backend state.
+1. **UI Automation (Selenium 4)**: 
+   - Focus: End-to-end member workflows and cross-browser UX integrity.
+   - Design: Robust Page Object Model (POM) with explicit wait strategies.
+2. **API Validation (Requests)**: 
+   - Focus: Rapid business logic verification and state-change validation.
+   - Design: Stateless HTTP clients with comprehensive schema validation.
+3. **Data Integrity (SQL)**: 
+   - Focus: Backend persistence and ETL accuracy.
+   - Design: Direct database assertions to ensure UI/API actions are correctly reflected in the system of record.
+4. **Performance Engineering (JMeter)**: 
+   - Focus: System reliability under load and response-time SLAs.
+   - Design: Targeted load profiles for critical endpoints (Claim Submission, Profile Retrieval).
 
-## Unified Reporting Strategy
-Comprehensive visibility is mandated across all test execution layers:
-- **Test Results**: All layers utilize standard reporting formats (e.g., Allure reports, JUnit XML).
-- **Consolidation**: Test artifacts from UI, API, and Data layers are aggregated by the CI/CD orchestrator to provide a single, unified view of quality metrics and test coverage.
-- **Failure Triage**: Reports automatically include detailed logs, screenshots (for UI failures), and payload traces (for API failures) to expedite defect analysis.
+## Shared Orchestration & Infrastructure
+To maintain consistency, all pillars leverage a centralized orchestration layer:
+- **Environment Management**: Configurations (Base URLs, DB strings) are externalized and injected via CI/CD (GitHub Actions).
+- **Unified Reporting**: All test results are aggregated into a single visibility layer (supporting Allure/JUnit) for consolidated quality metrics.
+- **Observability**: Standardized logging and failure-capture (Screenshots, Trace IDs) across all repositories to expedite triage.
 
----
-**Author:** Srinivasa Rao Thata  
-**Year:** 2026
+## Tooling Rationale
+- **Python**: Selected for its extensive library ecosystem (Pytest, Requests, Selenium) and rapid development lifecycle.
+- **GitHub Actions**: Provides a native, scalable CI/CD environment for parallel test execution.
