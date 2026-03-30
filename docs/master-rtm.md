@@ -1,8 +1,8 @@
-# Master Requirements Traceability Matrix (RTM)
+# 🧬 Master Requirements Traceability Matrix (RTM)
 
 This Master RTM provides a centralized view of our quality coverage across the Claims Management ecosystem. It maps core Business Requirements to their respective validation layers and specialized test suites.
 
-## Quality Coverage Matrix
+## 🧪 Quality Coverage Matrix
 
 | Feature ID | Business Requirement | UI (Selenium) | API (Requests) | Data (SQL) | Perf (JMeter) |
 | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -13,14 +13,14 @@ This Master RTM provides a centralized view of our quality coverage across the C
 | **REQ-HIS-01** | Historical Claims Retrieval (>24 months) | ✅ | - | ✅ | ✅ |
 | **REQ-SEC-01** | PII/PHI Masking in UI/Payloads | ✅ | ✅ | ✅ | - |
 
-## Coverage Legend
+## 🏷️ Coverage Legend
 - **UI**: End-to-end workflow validation and UX integrity.
-- **API**: Business logic and schema validation at the service layer.
+- **API**: Business logic and schema validation.
 - **Data**: Backend persistence and ETL synchronization checks.
 - **Perf**: Response time SLAs and system stability under load.
 
-## Traceability Links
-Detailed test case definitions can be found in the individual repository `tests/` directories:
-*   [UI Tests (claims-ui-automation)](https://github.com/SrinivasaraoThata/claims-ui-automation)
-*   [API Tests (Upcoming)](https://github.com/SrinivasaraoThata/claims-qa-suite)
-*   [Performance Tests (Upcoming)](https://github.com/SrinivasaraoThata/claims-qa-suite)
+## 🔗 Traceability Links
+Detailed test case definitions are found in individual repository `tests/` directories:
+*   🏗️ **[UI Tests (claims-ui-automation)](https://github.com/SrinivasaraoThata/claims-ui-automation)**
+*   **[API Tests (Upcoming)](https://github.com/SrinivasaraoThata/claims-qa-suite)**
+*   **[Performance Tests (Upcoming)](https://github.com/SrinivasaraoThata/claims-qa-suite)**
