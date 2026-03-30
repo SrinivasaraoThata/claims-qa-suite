@@ -10,12 +10,12 @@ This hub orchestrates four high-performance repositories aimed at validating the
 
 ```mermaid
 graph TD
-    hub[<b>Quality Engineering Hub</b><br/>Strategy & Traceability]
+    hub["<b>Quality Engineering Hub</b><br/>Strategy & Traceability"]
     
-    hub --> UI[<b>UI Automation Pillar</b><br/><i>[Active] Selenium/Python</i>]
-    hub --> API[<b>API Validation</b><br/><i>[Upcoming] Requests</i>]
-    hub --> DATA[<b>Data Integrity</b><br/><i>[Upcoming] SQL/Pytest</i>]
-    hub --> PERF[<b>Performance Pillar</b><br/><i>[Upcoming] JMeter</i>]
+    hub --> UI["<b>UI Automation Pillar</b><br/><i>[Active] Selenium/Python</i>"]
+    hub --> API["<b>API Validation</b><br/><i>[Upcoming] Requests</i>"]
+    hub --> DATA["<b>Data Integrity</b><br/><i>[Upcoming] SQL/Pytest</i>"]
+    hub --> PERF["<b>Performance Pillar</b><br/><i>[Upcoming] JMeter</i>"]
     
     classDef main fill:#f5f5f5,stroke:#333,stroke-width:2px,color:#000;
     classDef active fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b;
