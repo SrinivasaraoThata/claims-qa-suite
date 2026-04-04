@@ -13,7 +13,7 @@ This Master RTM provides a centralized view of our quality coverage across the C
 | **REQ-HIS-01** | Historical Claims Retrieval (>24 months) | ✅ | ✅ | ✅ | ✅ |
 | **REQ-SEC-01** | PII/PHI Masking in UI/Payloads | 📋 | ✅ | ✅ | - |
 
-✅ Implemented | 📋 Planned | - Not in scope
+✅ Implemented & Passing in CI | 📋 Planned | - Not in scope
 
 ## Coverage Legend
 - **UI**: End-to-end workflow validation and UX integrity.
