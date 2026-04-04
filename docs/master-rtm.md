@@ -9,8 +9,8 @@ This Master RTM provides a centralized view of our quality coverage across the C
 | **REQ-LOG-01** | Secure Member Authentication (SSO/JWT) | ✅ | ✅ | - | - |
 | **REQ-CLM-01** | Claim Submission & Validation | ✅ | ✅ | ✅ | ✅ |
 | **REQ-CLM-02** | Real-time Adjudication Status Updates | ✅ | ✅ | ✅ | - |
-| **REQ-CLM-03** | Denial Reason Code Mapping (ICD-10) | 📋 | ✅ | ✅ | - |
-| **REQ-HIS-01** | Historical Claims Retrieval (>24 months) | ✅ | - | ✅ | ✅ |
+| **REQ-CLM-03** | Denial Reason Code Mapping (ICD-10) | 📋 | 📋 | ✅ | - |
+| **REQ-HIS-01** | Historical Claims Retrieval (>24 months) | ✅ | ✅ | ✅ | ✅ |
 | **REQ-SEC-01** | PII/PHI Masking in UI/Payloads | 📋 | ✅ | ✅ | - |
 
 ✅ Implemented | 📋 Planned | - Not in scope
@@ -23,6 +23,6 @@ This Master RTM provides a centralized view of our quality coverage across the C
 
 ## Traceability Links
 - UI Tests → https://github.com/SrinivasaraoThata/claims-ui-automation
-- API Tests (claims-api-automation) → [Upcoming]
+- API Tests → [https://github.com/SrinivasaraoThata/claims-api-automation](https://github.com/SrinivasaraoThata/claims-api-automation)
 - Data Tests (claims-data-integrity) → [Upcoming]
 - Performance Tests (claims-performance) → [Upcoming]
