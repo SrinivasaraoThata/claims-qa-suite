@@ -13,7 +13,7 @@ graph TD
     hub["<b>Quality Engineering Hub</b><br/>Strategy & Traceability"]
     
     hub --> UI["<b>UI Automation Pillar</b><br/><i>[Active] Selenium/Python</i>"]
-    hub --> API["<b>API Validation</b><br/><i>[Upcoming] Requests</i>"]
+    hub --> API["<b>API Validation</b><br/><i>[Active] Requests</i>"]
     hub --> DATA["<b>Data Integrity</b><br/><i>[Upcoming] SQL/Pytest</i>"]
     hub --> PERF["<b>Performance Pillar</b><br/><i>[Upcoming] JMeter</i>"]
     
@@ -22,13 +22,14 @@ graph TD
     classDef upcoming fill:#fff,stroke:#999,stroke-dasharray: 5 5,color:#666;
     
     class hub main;
-    class UI active;
-    class API,DATA,PERF upcoming;
+    class UI,API active;
+    class DATA,PERF upcoming;
 ```
 
 For detailed strategy and execution on each pillar, refer to their respective hubs.
 
 *   [UI Automation (Selenium)](https://github.com/SrinivasaraoThata/claims-ui-automation): End-to-end UX integrity.
+*   [API Validation (Requests)](https://github.com/SrinivasaraoThata/claims-api-automation): Business logic and schema validation.
 
 ## Technology Rationale
 *   **Python Stack**: Chosen for its library support (Requests, Pytest) and ease of integration into modern CI/CD pipelines.
