@@ -25,4 +25,4 @@ This Master RTM provides a centralized view of our quality coverage across the C
 - UI Tests → https://github.com/SrinivasaraoThata/claims-ui-automation
 - API Tests → https://github.com/SrinivasaraoThata/claims-api-automation
 - Data Tests → https://github.com/SrinivasaraoThata/claims-data-integrity
-- Performance Tests (claims-performance) → [Upcoming]
+- [Performance Tests (claims-performance-testing)](https://github.com/SrinivasaraoThata/claims-performance-testing)

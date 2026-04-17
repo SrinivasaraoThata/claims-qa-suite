@@ -15,15 +15,14 @@ graph TD
     hub --> UI["<b>UI Automation Pillar</b><br/><i>[Active] Selenium/Python</i>"]
     hub --> API["<b>API Validation</b><br/><i>[Active] Requests</i>"]
     hub --> DATA["<b>Data Integrity</b><br/><i>[Active] Requests/Pytest</i>"]
-    hub --> PERF["<b>Performance Pillar</b><br/><i>[Upcoming] JMeter</i>"]
+    hub --> PERF["<b>Performance Pillar</b><br/><i>[Active] Python/JMeter</i>"]
     
     classDef main fill:#f5f5f5,stroke:#333,stroke-width:2px,color:#000;
     classDef active fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b;
     classDef upcoming fill:#fff,stroke:#999,stroke-dasharray: 5 5,color:#666;
     
     class hub main;
-    class UI,API,DATA active;
-    class PERF upcoming;
+    class UI,API,DATA,PERF active;
 ```
 
 For detailed strategy and execution on each pillar, refer to their respective hubs.
@@ -31,6 +30,7 @@ For detailed strategy and execution on each pillar, refer to their respective hu
 *   [UI Automation (Selenium)](https://github.com/SrinivasaraoThata/claims-ui-automation): End-to-end UX integrity.
 *   [API Validation (Requests)](https://github.com/SrinivasaraoThata/claims-api-automation): Business logic and schema validation.
 *   [Data Integrity](https://github.com/SrinivasaraoThata/claims-data-integrity): Backend persistence and ETL synchronization checks.
+*   [Performance Tests (claims-performance-testing)](https://github.com/SrinivasaraoThata/claims-performance-testing): SLA validation and system stability checks under load.
 
 ## Technology Rationale
 *   **Python Stack**: Chosen for its library support (Requests, Pytest) and ease of integration into modern CI/CD pipelines.
