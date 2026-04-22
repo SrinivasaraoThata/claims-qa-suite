@@ -6,9 +6,6 @@ This repository serves as the **Master Test Strategy** and orchestration center 
 The objective is to achieve **90%+ automated regression coverage** for the Claims lifecycle. By implementing a "Shift-Left" approach, we validate business logic at the API and Database levels before the UI is even rendered, significantly reducing the cost of defects found in UAT.
 
 ## Integrated Quality Architecture (Specialized Pillars)
-This hub manages four high-performance repositories that validate the full claims lifecycle.
-
-## Integrated Quality Architecture (Specialized Pillars)
 
 This hub manages four high-performance repositories that validate the full claims lifecycle.
 
