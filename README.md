@@ -8,22 +8,14 @@ The objective is to achieve **90%+ automated regression coverage** for the Claim
 ## Integrated Quality Architecture (Specialized Pillars)
 This hub manages four high-performance repositories that validate the full claims lifecycle.
 
-```mermaid
-graph TD
-    hub["<b>Quality Engineering Hub</b><br/>Strategy & Traceability"]
-    
-    hub --> UI["<b>UI Automation Pillar</b><br/><i>[Active] Selenium/Python</i>"]
-    hub --> API["<b>API Validation</b><br/><i>[Active] Requests</i>"]
-    hub --> DATA["<b>Data Integrity</b><br/><i>[Active] Requests/Pytest</i>"]
-    hub --> PERF["<b>Performance Pillar</b><br/><i>[Active] Python/JMeter</i>"]
-    
-    classDef main fill:#f5f5f5,stroke:#333,stroke-width:2px,color:#000;
-    classDef active fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b;
-    classDef upcoming fill:#fff,stroke:#999,stroke-dasharray: 5 5,color:#666;
-    
-    class hub main;
-    class UI,API,DATA,PERF active;
-```
+## Integrated Quality Architecture (Specialized Pillars)
+
+This hub manages four high-performance repositories that validate the full claims lifecycle.
+
+- **UI Automation (Selenium/Python)** — End-to-end UX integrity. [View Repo](https://github.com/SrinivasaraoThata/claims-ui-automation)
+- **API Validation (Requests/Python)** — Business logic and schema validation.[View Repo](https://github.com/SrinivasaraoThata/claims-api-automation)
+- **Data Integrity (SQL/Pytest)** — Backend persistence and ETL synchronization checks.[View Repo](https://github.com/SrinivasaraoThata/claims-data-integrity)
+- **Performance Tests (Python/JMeter)** — SLA validation and system stability checks under load.[View Repo](https://github.com/SrinivasaraoThata/claims-performance-testing)
 
 For detailed strategy and execution on each pillar, refer to their respective hubs.
 
